@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/css/style.css">
+
+<head>
+<title>Tesis - UNI: Página de inicio </title>
+
+</head>
+<body>
+<div class="row" style="justify-content: center; display: flex;">
+      <div class="col-md-9 brand">
+         <img class="pull-left" src="http://cybertesis.uni.edu.pe/image/portada.png" alt="Portada UNI" style="max-width: 100%; height: auto; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;">
+      </div>
+      <div class="col-md-3">
+         <img class="pull-right" src="http://cybertesis.uni.edu.pe/image/logo-UNI-con-tipo.png" alt="UNI logo" width="170" style="padding: 0px; max-width: 100%; margin-top: 35px;">
+      </div>
+   </div>
+<div class="row text-center">
+    <a href="/contexto" class="link-danger">Mantenimiento de contextos</a>
+    <a href="/dashboard" class="link-danger">Dashboard Aradiel - Bot</a>
+</div>
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="modalCalifica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Calificacion de Aradiel</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-4">
+                    <p>Selecciona una de las opciones</p>
+                </div>
+                <div class="col-8">
+                    <select class="form-select" id="ddlCalifica" aria-label="Default select example">
+                      <option value="5" selected>Excelente atencion</option>
+                      <option value="4">Buena Atención</option>
+                      <option value="3">No estuvo mal</option>
+                      <option value="2">Hay que mejorar la atención</option>
+                      <option value="1">No me gustó la atención</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="btnEnviarCalificacion" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/ultraviolet/72/bot.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat Asesoría de Tesis</h4>
+                    <p class="chatbox__description--header">Hola. Mi nombre es Aradiel. Cómo puedo ayudarte?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Escribir mensaje...">
+                <button class="chatbox__send--footer send__button">Enviar</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button id="btnChatBot"><img src="../static/images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../static/js/app.js"></script>
+
+</body>
+</html>
